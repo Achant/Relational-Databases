@@ -6,5 +6,5 @@ INSERT INTO music_store VALUES (4, "Hotel California", "Eagles", "Rock", 1976, 2
 INSERT INTO music_store VALUES (5, "Spice", "Spice Girls", "Pop", 1996, 20, 30);
 INSERT INTO music_store VALUES (6, "Hybrid Theory", "Linink Park", "Rap Metal", 2000, 19, 45);
 SELECT * FROM music_store ;
-SELECT * FROM music_store where release_year >2000 ORDER BY release_year DESC ;
+SELECT * FROM music_store where release_year >2000 ORDER BY release_year DESC;
 SELECT price, SUM(quantity) FROM music_store GROUP BY id; 
