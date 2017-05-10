@@ -1,0 +1,10 @@
+CREATE TABLE music_store (id INTEGER PRIMARY KEY, album TEXT, artist TEXT, genre TEXT, release_year INTEGER, price INTEGER, quantity INTEGER);
+INSERT INTO music_store VALUES (1, "The Dark Side of the Moon", "Pink Floyd", "Rock", 1973, 45, 20);
+INSERT INTO music_store VALUES (2, "The Bodyguard", "Whitney Houston / Various artists", "Pop", 1992, 40, 32);
+INSERT INTO music_store VALUES (3, "Bat Out of Hell", "Meat Loaf", "Rock", 1977, 28, 10);
+INSERT INTO music_store VALUES (4, "Hotel California", "Eagles", "Rock", 1976, 22, 15);
+INSERT INTO music_store VALUES (5, "Spice", "Spice Girls", "Pop", 1996, 20, 30);
+INSERT INTO music_store VALUES (6, "Hybrid Theory", "Linink Park", "Rap Metal", 2000, 19, 45);
+SELECT * FROM music_store ;
+ SELECT * FROM music_store where release_year >2000 ORDER BY release_year DESC ;
+SELECT  price, SUM(quantity) FROM music_store GROUP BY id; 
