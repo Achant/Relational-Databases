@@ -1,4 +1,3 @@
-DROP TABLE IF EXISTS bikes;
 
 CREATE TABLE bikes (
   id SERIAL PRIMARY KEY,
@@ -11,8 +10,6 @@ CREATE TABLE bikes (
   brakes_back BOOLEAN DEFAULT true
 );
 
-DROP TABLE IF EXISTS frames;
-
 CREATE TABLE frames (
   id SERIAL PRIMARY KEY,
   color VARCHAR DEFAULT 'black',
@@ -20,15 +17,12 @@ CREATE TABLE frames (
   style VARCHAR DEFAULT 'street'
 );
 
-DROP TABLE IF EXISTS tires;
-
 CREATE TABLE tires (
   id SERIAL PRIMARY KEY,
   diameter INTEGER DEFAULT 22,
   type VARCHAR DEFAULT 'street'
 );
 
-DROP TABLE IF EXISTS bike_frame;
 
 CREATE TABLE bike_frame (
   id SERIAL PRIMARY KEY,
@@ -36,7 +30,6 @@ CREATE TABLE bike_frame (
   frame_id INTEGER NULL
 );
 
-DROP TABLE IF EXISTS bike_tire_id;
 
 CREATE TABLE bike_tire_id (
   id SERIAL PRIMARY KEY,
