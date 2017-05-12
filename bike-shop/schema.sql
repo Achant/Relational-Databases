@@ -1,4 +1,3 @@
-
 CREATE TABLE bikes (
   id SERIAL PRIMARY KEY,
   name VARCHAR,
