@@ -69,4 +69,4 @@ SELECT AVG(rating) AS Average_Rating FROM music GROUP BY playlists HAVING COUNT 
 SELECT * FROM music WHERE playlists IN ('Bubblegum', 'Hood Anthem', 'Funky');
 SELECT * FROM music WHERE playlists IN ('Bubblegum', 'Hood Anthem', 'Funky') LIMIT 5;
 SELECT * FROM music WHERE playlists IN ('Bubblegum', 'Hood Anthem', 'Funky') ORDER BY rating;
-SELECT * FROM music JOIN artists ON music.artist = artists.name
+SELECT * FROM music JOIN artists ON music.artist = artists.name 
